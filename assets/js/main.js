@@ -18,7 +18,7 @@ const discount_senior = 0.4;
 if (age_user <= 18) {
     alert ("Minors have a 20% discount");
     let price_passenger = (km_number * price_km);
-    let price_total = (price_passenger * discount_child)
+    let price_total = price_passenger - (price_passenger * discount_child);
     console.log(price_total);
     document.writeln(`Total Price: ${price_total.toFixed(2)} €`);
 }
@@ -26,7 +26,7 @@ if (age_user <= 18) {
 else if (age_user >= 65) {
     alert ("Senior have a 40% discount"); 
     let price_passenger = (km_number * price_km);
-    let price_total = (price_passenger * discount_senior)
+    let price_total = price_passenger - (price_passenger * discount_senior)
     console.log(price_total);
     document.writeln(`Total Price: ${price_total.toFixed(2)} €`);
 }
