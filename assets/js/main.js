@@ -15,13 +15,15 @@ let discount_senior = 0.4;
 
 //Eseguiamo delle operazioni math:
 if (age_user < 18) {
+    alert ("Minors have a 20% discount");
     let price_passenger = (km_number * price_km);
     let price_total = (price_passenger / discount_child)
     console.log(price_total);
 
 }
 
-else if (age_user > 18 && age_user > 65)  {
+else if (age_user > 65) {
+    alert ("Senior have a 40% discount"); 
     let price_passenger = (km_number * price_km);
     let price_total = (price_passenger / discount_senior)
     console.log(price_total);
