@@ -16,7 +16,7 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
           - SE ha l' età compressa tra 0-18 anni dal prezzo totale avrà un sconto di 20% ALTRIMENTI SE
           - ha l'età tra i 18-64 anni il prezzo sarà invariato ALTRIMENTI SE
           - ha l'età sopra 65 anni avrà lo sconto di 40%
-
+-Stampare nel documento il prezzo finale per ogni passaggero 
 ## Tools
 - variabili let o const
 - prompt

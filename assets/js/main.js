@@ -13,8 +13,9 @@ let price_km = 0.21;
 const discount_child = 0.2;
 const discount_senior = 0.4;
 
-//Eseguiamo delle operazioni math:
-if (age_user < 18) {
+//Eseguiamo delle operazioni math con delle condizioni:
+//Usare il document.writeIn per stampare il prezzo 
+if (age_user <= 18) {
     alert ("Minors have a 20% discount");
     let price_passenger = (km_number * price_km);
     let price_total = (price_passenger * discount_child)
@@ -22,7 +23,7 @@ if (age_user < 18) {
     document.writeln(`Total Price: ${price_total.toFixed(2)} €`);
 }
 
-else if (age_user > 65) {
+else if (age_user >= 65) {
     alert ("Senior have a 40% discount"); 
     let price_passenger = (km_number * price_km);
     let price_total = (price_passenger * discount_senior)
